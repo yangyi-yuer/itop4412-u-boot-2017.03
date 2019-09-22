@@ -59,6 +59,10 @@ config TARGET_TRATS2
 config TARGET_ODROID
 	bool "Exynos4412 Odroid board"
 
+config TARGET_ITOP4412
+	bool "Exynos4412 iTop4412 board"
+	select SUPPORT_SPL
+
 endchoice
 endif
 
@@ -149,6 +153,7 @@ source "board/samsung/smdkv310/Kconfig"
 source "board/samsung/trats/Kconfig"
 source "board/samsung/universal_c210/Kconfig"
 source "board/samsung/origen/Kconfig"
+source "board/samsung/itop4412/Kconfig"
 source "board/samsung/trats2/Kconfig"
 source "board/samsung/odroid/Kconfig"
 source "board/samsung/arndale/Kconfig"
